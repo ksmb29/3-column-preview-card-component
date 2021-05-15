@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --col1: hsl(31, 77%, 52%);
+    --col2: hsl(184, 100%, 22%);
+    --col3: hsl(179, 100%, 13%);
+}
+
+/*
+paragraphs: hsla(0, 0%, 100%, 0.75);
+*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(0, 0%, 95%);
+}
+.card{
+    width: 70%;
+    margin: auto;
+    padding: 120px 0;
+}
+.column1{
+    background: var(--col1);
+    border-radius: 8px 8px 0 0;
+}
+.column2{
+    background: var(--col2);
+}
+
+.column3{
+    background: var(--col3);
+    border-radius: 0 0 8px 8px;
+}
+.frame{
+    padding: 40px;
+}
+button{
+    padding: 17px 35px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    position: relative;
+    bottom: 0;
+}
+button:hover{
+    color: white;
+    border: 3px solid white;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 5px 0;
+    font-size: 2.2em;
+}
+p{
+    opacity: .75;
+    line-height: 2;
+    font-size: .8em;
+    padding-bottom: 5px;
+    font-weight: 100;
+    word-spacing: 1.2px;
+}
+.column1 button{
+    border: 3px solid var(--col1);
+    color: var(--col1);
+}
+.column1 button:hover{
+    background: var(--col1);
+    color: white;
+    opacity: .75;
+    border: 3px solid white;
+}
+.column2 button{
+    border: 3px solid var(--col2);
+    color: var(--col2);
+}
+.column2 button:hover{
+    background: var(--col2);
+    color: white;
+    opacity: .75;
+    border: 3px solid white;
+}
+.column3 button{
+    border: 3px solid var(--col3);
+    color: var(--col3);
+}
+.column3 button:hover{
+    background: var(--col3);
+    color: white;
+    opacity: .75;
+    border: 3px solid white;
+}
+@media screen and (min-width:425px){
+    body{
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+    }
+    .column1{
+        border-radius: 8px 0 0 8px;
+    }
+    .column3{
+        border-radius: 0 8px 8px 0;
+    }
+    p{
+        padding-bottom: 40px;
+        padding-right: 5px;
+        font-size: .9em;
+    }
+}
